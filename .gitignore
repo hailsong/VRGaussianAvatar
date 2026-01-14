@@ -1,0 +1,136 @@
+################################################################################
+# VRGaussianAvatar (monorepo): Python (GA Backend) + Unity (VR Frontend)
+################################################################################
+
+# ------------------------------------------------------------------------------
+# OS / Editor
+# ------------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Visual Studio / VS Code / JetBrains
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userprefs
+*.csproj.user
+
+# ------------------------------------------------------------------------------
+# Python (global)
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.conda/
+conda-env/
+pip-wheel-metadata/
+
+# Packaging / build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+pip-log.txt
+
+# Testing / tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.coverage
+coverage.xml
+htmlcov/
+.pyre/
+.ipynb_checkpoints/
+
+# Jupyter / notebooks
+*.ipynb_checkpoints
+notebooks/.ipynb_checkpoints/
+
+# Logs
+*.log
+logs/
+log/
+
+# Data / outputs (generic)
+data/
+datasets/
+outputs/
+runs/
+checkpoints/
+weights/
+results/
+tmp/
+temp/
+
+# ------------------------------------------------------------------------------
+# Unity (global)
+#   Track: Assets/, Packages/, ProjectSettings/
+#   Ignore generated: Library/, Temp/, Obj/, Build(s)/, Logs/, UserSettings/
+# ------------------------------------------------------------------------------
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# Unity package cache (varies by setup)
+PackageCache/
+Packages/com.unity.*.tgz
+
+# Unity crash reports
+sysinfo.txt
+
+# Addressables / Streaming build outputs (keep your actual StreamingAssets content)
+**/ServerData/
+**/StreamingAssets/aa/
+
+# ------------------------------------------------------------------------------
+# Project-specific paths
+# ------------------------------------------------------------------------------
+# If you produce experiment artifacts inside GA Backend:
+VRGaussianAvatar_GABackend/experiments/**/outputs/
+VRGaussianAvatar_GABackend/experiments/**/runs/
+VRGaussianAvatar_GABackend/experiments/**/results/
+VRGaussianAvatar_GABackend/experiments/**/checkpoints/
+VRGaussianAvatar_GABackend/experiments/**/logs/
+
+# If LHM contains large generated assets (enable as needed)
+# VRGaussianAvatar_GABackend/LHM/**/checkpoints/
+# VRGaussianAvatar_GABackend/LHM/**/outputs/
+# VRGaussianAvatar_GABackend/LHM/**/data/
+
+# Unity-specific local layouts (sometimes checked in by accident)
+VRGaussianAvatar_VRFrontend/UserSettings/Layouts/
+
+# ------------------------------------------------------------------------------
+# Optional: Unity + .NET build artifacts that sometimes appear
+# ------------------------------------------------------------------------------
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.VC.VC.opendb
+
+# ------------------------------------------------------------------------------
+# Optional: If you use NVIDIA/graphics dumps
+# ------------------------------------------------------------------------------
+*.nvprof
+*.nvp
+*.nsys-rep
+*.nsight-cuprof-report
