@@ -1,6 +1,18 @@
-# VRGaussianAvatar
+# <span><img src="./assets/icon.png" height="35" style="vertical-align: top;"> VRGaussianAvatar: Integrating 3D Gaussian Avatars into VR</span>
 
-Official implementation of **“VRGaussianAvatar: Integrating 3D Gaussian Avatars into VR.”**
+##### <p align="center"> [Hail Song](https://hailsong.github.io/)<sup>1</sup>, [Boram Yoon](mailto:boram.yoon1206@kaist.ac.kr)<sup>2</sup>, [Seokhwan Yang](mailto:ysshwan147@kaist.ac.kr)<sup>1</sup>, [Seoyoung Kang](mailto:sy1009kang@kaist.ac.kr)<sup>1</sup>, [Hyunjeong Kim](mailto:hcihjkim@gmail.com)<sup>3,4</sup>, [Henning Metzmacher](mailto:henning.metzmacher@inf.ethz.ch)<sup>4</sup>, [Woontack Woo](mailto:wwoo@kaist.ac.kr)<sup>1,2</sup> </p>
+
+##### <p align="center"> <sup>1</sup>KAIST UVR Lab, <sup>2</sup>KAIST KI-ITC ARRC, <sup>3</sup>Hansung University, <sup>4</sup>ETH Zurich, Game Technology Center </p>
+##### <p align="center"> IEEE VR 2026 &middot; IEEE TVCG 2026 </p>
+
+<p align="center">
+  <a href="https://vrgaussianavatar.github.io/">
+    <img src="https://img.shields.io/badge/🌐-Project_Website-blueviolet" alt="Project Website">
+  </a>
+  <a href="https://arxiv.org/abs/2602.01674">
+    <img src="https://img.shields.io/badge/📜-arXiv:2602.01674-b31b1b" alt="arXiv Paper">
+  </a>
+</p>
 
 <p align="center">
   <img src="./assets/teaser.png" heihgt="100%">
@@ -32,6 +44,12 @@ VRGaussianAvatar/
 ---
 
 ## Quick Start (Localhost)
+
+### 0) Clone repository (Including submodules)
+
+```bash
+git clone --recurse-submodules https://github.com/hailsong/VRGaussianAvatar.git
+```
 
 ### 1) GA Backend (Python)
 
@@ -74,12 +92,22 @@ Run the backend first before launching the Unity frontend.
    - Download `C1_Self_Client.unity` from [Google Drive](https://drive.google.com/file/d/1AXPOeICSh2o5Dw1yyIZ_GMPLAp02YRh4/view?usp=drive_link).
    - Place it in: `VRGaussianAvatar_VRFrontend/Assets/VRGA/Scene/`.
 
-2. Open **Unity Hub**.
-3. Click **Open** and select the folder:
+2. **Download SMPLX Asset**:
+   - Download `SMPL-X Unity Package` from [SMPL-X Website](https://smpl-x.is.tue.mpg.de/).
+   - Place it in: `VRGaussianAvatar_VRFrontend/Assets/VRGA/Scene/SMPLX-Unity`.
+
+3. Open **Unity Hub**.
+4. Click **Open** and select the folder:
    - `VRGaussianAvatar_VRFrontend/`
-4. Ensure the project is opened with **Unity `6000.1.13f1`**.
-5. Open the scene `Assets/VRGA/Scene/C1_Self_Client.unity`.
-6. Run the project under the **VR Front Link setting** (Link-based PCVR execution).
+5. Ensure the project is opened with **Unity `6000.1.13f1`**.
+6. Open the scene `Assets/VRGA/Scene/C1_Self_Client.unity`.
+7. **SMPLX Model Setting**:
+   - (1) Select `Assets/VRGA/SMPLX-Unity/Assets/SMPLX/Models`
+   - (2) Check "Read/Write" Box
+   - (3) Click **Apply**
+   <img src="./assets/VRFrontend_setting.png" width="100%">
+
+8. Run the project under the **VR Front Link setting** (Link-based PCVR execution).
 
 ---
 
@@ -99,7 +127,13 @@ If you use this codebase in academic work, please cite the corresponding paper:
 
 ```bibtex
 
-# The main citation bibtex will be available soon!
+@article{song2026vrgaussianavatar,
+  title={VRGaussianAvatar: Integrating 3D Gaussian Avatars into VR},
+  author={Song, Hail and Yoon, Boram and Yang, Seokhwan and Kang, Seoyoung and Kim, Hyunjeong and Metzmacher, Henning and Woo, Woontack},
+  journal={IEEE Transactions on Visualization and Computer Graphics},
+  year={2026},
+  publisher={IEEE}
+}
 
 # We use the LHM as a backend for the 3D Gaussian avatar rendering.
 @inproceedings{qiu2025LHM,
