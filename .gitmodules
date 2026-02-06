@@ -1,0 +1,3 @@
+[submodule "VRGaussianAvatar_GABackend/LHM"]
+	path = VRGaussianAvatar_GABackend/LHM
+	url = https://github.com/aigc3d/LHM.git
