@@ -130,9 +130,8 @@ If you use this codebase in academic work, please cite the corresponding paper:
 @article{song2026vrgaussianavatar,
   title={VRGaussianAvatar: Integrating 3D Gaussian Avatars into VR},
   author={Song, Hail and Yoon, Boram and Yang, Seokhwan and Kang, Seoyoung and Kim, Hyunjeong and Metzmacher, Henning and Woo, Woontack},
-  journal={IEEE Transactions on Visualization and Computer Graphics},
-  year={2026},
-  publisher={IEEE}
+  journal={arXiv preprint arXiv:2602.01674},
+  year={2026}
 }
 
 # We use the LHM as a backend for the 3D Gaussian avatar rendering.
